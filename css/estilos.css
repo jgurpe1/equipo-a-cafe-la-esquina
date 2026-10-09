@@ -1,1 +1,95 @@
 /* Estilos de la web */
+:root{
+    --Amarillo-calido: #f0e5bb;
+    --color-cabecera:#E3F6F5;
+    --verde-bosque-dark: #145214dc;
+    --verde-bosque: #5bd35f9f;
+}
+body {
+    background-color: #ebe8bc;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.cabeza {
+        display: flex;
+        align-items: center; /* Alinea verticalmente el logo y el título */
+        text-decoration: none;
+        gap: 500px;           /* Espacio entre el logo y el título */
+        position: relative;  /* Necesario si prefieres posicionamiento absoluto */
+        background-color: var(--verde-bosque-dark);
+        color: var(--color-cabecera);
+        }
+
+
+.navegacion  {
+    background-color: rgb(58, 94, 6);
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* Posicionamiento pegajoso */
+    position: sticky;
+    top: 0; /* Se fija en la parte superior del navegador */
+    z-index: 1000; /* Asegura que la barra quede por encima de otros elementos */
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 15px;
+    background-color: rgba(57, 94, 6, 0.918);
+    color: white;
+}
+
+.espaciado-página {
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 35%;
+}
+
+.centro{
+    margin-right: 100px;
+}
+
+.verdecito {
+    display: inline-block;
+    width: fit-content;
+    color: var(--verde-bosque-dark);
+    font-weight: bold;
+    background-color: var(--verde-bosque);
+    border: 2px solid var(--verde-bosque);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 105px;
+    font-size: 18px;
+}
+
+
+.tarjetas {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    border: 2px solid var(--Amarillo-calido);
+    border-radius: 15px;
+    color: black;
+    box-sizing: border-box;
+}
+
+.tabla-tarjetas {
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
