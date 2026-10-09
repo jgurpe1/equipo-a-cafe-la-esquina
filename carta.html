@@ -7,8 +7,51 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+<!--Ponemos una barra con los botones que filtran la selección de productos. Cada botón llama a un producto con una class similar-->
+<div>
+  <button id="btnTodo">Todos</button>
+  <button id="btnCafe">Cafés</button>
+  <button id="btnDulce">Dulces</button>
+  <button id="btnSalado">Salados</button>
+</div>
+  <div>
+    <!--Se hace una caja para englobar todas las opciones de la carta. Los siguientes div corresponden a las fichas de cada producto.
+    Cada ficha cuenta con una clase para distinguir su categoria y una clase "producto" para agruparlas a la hora de usar javascript y css
+    -->
+    <div class="producto cafe">
+      <h4>Expresso</h4>
+      <p>1,40€</p>
+    </div>
+    <div class="producto cafe">
+      <h4>Cafe con leche</h4>
+      <p>1,80€</p>
+    </div>
+    <div class="producto cafe">
+      <h4>Capuchino</h4>
+      <p>2,20€</p>
+    </div>
+    <div class="producto dulce">
+      <h4>Croissant</h4>
+      <p>1,60€</p>
+    </div>
+    <div class="producto dulce">
+      <h4>Tarta del día</h4>
+      <p>3,50€</p>
+    </div>
+    <div class="producto dulce">
+      <h4>Galleta de avena</h4>
+      <p>1,20€</p>
+    </div>
+    <div class="producto salado">
+      <h4>Tostada de tomate</h4>
+      <p>2,50€</p>
+    </div>
+    <div class="producto salado">
+      <h4>Bocadillo de tortilla</h4>
+      <p>4,00€</p>
+    </div>
+  </div>
 
-  <!-- Aquí va la página -->
 
   <script src="js/main.js"></script>
 </body>
