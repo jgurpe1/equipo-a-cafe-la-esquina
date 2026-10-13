@@ -11,8 +11,15 @@ body {
 
 h1 {
     font-size: 2.5rem;
+    color: var(--color-cabecera);
 }
 
+h2 {
+    text-align: center;
+    font-style: oblique;
+}
+
+/*TIUTLO DE LA PAGINA + EL MENU */
 .cabeza {
         display: flex;
         align-items: center; /* Alinea verticalmente el logo y el título */
@@ -23,19 +30,31 @@ h1 {
         color: var(--color-cabecera);
         }
 
-
-.navegacion  {
-    background-color: rgb(58, 94, 6);
-    padding: 12px 15px;
+.navegacion {
+    margin-left: 800px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* Posicionamiento pegajoso */
+    gap: 30px; 
     position: sticky;
-    top: 0; /* Se fija en la parte superior del navegador */
-    z-index: 1000; /* Asegura que la barra quede por encima de otros elementos */
+    top: 0;
+    z-index: 1000;
+    /* ASEGÚRATE DE QUE NO TIENE ESTOS BORDES */
+    border-bottom: none; 
+    box-shadow: none;    
 }
 
+/* Y quita el subrayado a los enlaces por si acaso */
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+
+
+input {
+    font-size: 1.2rem;     /* Aumenta el tamaño del texto */
+    padding: 10px 30px;  /* Aumenta el espacio interior (arriba/abajo y lados) */
+    margin-left: 800px;
+}
 
 footer {
     display: flex;
@@ -54,9 +73,7 @@ footer {
     padding-left: 35%;
 }
 
-.centro{
-    margin-right: 100px;
-}
+/*ESTO ES DE ABIERTO AHORA EN LA PRIMERA PAGINA */
 
 .verdecito {
     display: inline-block;
@@ -71,6 +88,7 @@ footer {
     font-size: 18px;
 }
 
+/*TARJETAS DE LOS PRODUCTOS*/
 
 .tarjetas {
     width: 100%;
@@ -92,4 +110,94 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+}
+
+
+/*BOTONES*/
+
+.botones-centro {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#btnTodo {
+    border: 2px solid green;
+    background-color: #008000d7;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+#btnCafe {
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+#btnDulce {
+        border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+#btnSalado {
+        border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+/*BOTONES QUE ESTAN DENTRO DE LAS TERJETAS */
+
+.botones-Añadir {
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+/* AVISO DEL PRODUCTO*/
+
+#avisoProducto {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*PEDIDOS */
+.pedidos {
+    max-width: 350px;
+    width: 100%;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid wheat;
+    border-radius: 6px;
+    /*  AÑADE ESTO PARA CENTRARLA */
+    margin: 50px auto; /* Centra horizontalmente y da un respiro arriba/abajo */
+}
+
+/* Ajustes para los textos y el botón */
+.pedidos p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.pedidos button {
+    padding: 6px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 0 auto;
 }
