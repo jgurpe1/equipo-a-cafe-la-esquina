@@ -11,7 +11,8 @@ const BTNSALADO = document.getElementById("btnSalado");
 let botones = document.querySelectorAll("button");
 console.log(botones)
 
-// Función para ocultar/mostrar los productos según la ficha aplicada
+// Función para ocultar/mostrar los productos según la ficha aplicada. La lógica es la siguiente: usamos "foreach" para que mire todas las class producto, 
+//en cada uno comprueba la categoria del boton o "ficha", si es el boton "todo" todas cambian a display block, si la class es igual a la "ficha"
 function mostrarProducto(ficha) {
     let contador = 0;
 
@@ -33,22 +34,18 @@ function mostrarProducto(ficha) {
 // Asignamos los eventos de clic a cada botón, estableciendo una función anónima para que se aplique unicamente al cliquear en el botón
 BTNTODO.addEventListener("click", function () {
     mostrarProducto("todo");
-    resaltarBoton("btnTodo");
 });
 
 BTNCAFE.addEventListener("click", function () {
     mostrarProducto("cafe");
-    resaltarBoton("btnCafe");
 });
 
 BTNDULCE.addEventListener("click", function () {
     mostrarProducto("dulce");
-    resaltarBoton("btnDulce");
 });
 
 BTNSALADO.addEventListener("click", function () {
     mostrarProducto("salado");
-    resaltarBoton("btnSalado");
 });
 
 // Inicializamos la página mostrando todo 
