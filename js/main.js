@@ -9,7 +9,7 @@ const BTNSALADO = document.getElementById("btnSalado");
 let botones = document.querySelectorAll("button");
 console.log(botones)
 
-/* Función para ocultar/mostrar los productos según la ficha aplicada */
+// Función para ocultar/mostrar los productos según la ficha aplicada
 function mostrarProducto(ficha) {
     let contador = 0;
 
