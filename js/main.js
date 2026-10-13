@@ -49,5 +49,5 @@ BTNSALADO.addEventListener("click", function () {
     resaltarBoton("btnSalado");
 });
 
-// Inicializamos la página mostrando todo y marcando el botón de "Todos"
+// Inicializamos la página mostrando todo 
 mostrarProducto("todo");
