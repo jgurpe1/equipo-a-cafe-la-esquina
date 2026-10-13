@@ -1,1 +1,10 @@
-/* Estilos de la web */
+.b-Carta_superior{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.b-Carta_superior input {
+    margin: 10px;
+}
