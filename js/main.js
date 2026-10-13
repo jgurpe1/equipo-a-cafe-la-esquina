@@ -1,5 +1,3 @@
-// Creamos una variable para seleccionar cada producto 
-const PRODUCTOS = document.querySelectorAll(".producto");
 
 // Creamos una constante que encuentra cada boton de filtro que vamos a utilizar
 const BTNTODO = document.getElementById("btnTodo");
@@ -7,7 +5,7 @@ const BTNCAFE = document.getElementById("btnCafe");
 const BTNDULCE = document.getElementById("btnDulce");
 const BTNSALADO = document.getElementById("btnSalado");
 
-
+//Le añadí una variable que no acabe usando con el fin de agrupar cada botón y aplicarle estilos en caso de que lo pulsen
 let botones = document.querySelectorAll("button");
 console.log(botones)
 
@@ -28,12 +26,6 @@ function mostrarProducto(ficha) {
     document.getElementById("avisoProducto").textContent = `Mostrando ${contador} productos`;
 }
 
-// Función para resaltar el botón activo
-//function resaltarBoton(Seleccionado) {
-//if (botones [Seleccionado]){
-//    botones.style.backgroundColor = "green"
-//} 
-//}
 
 
 // Asignamos los eventos de clic a cada botón, estableciendo una función anónima para que se aplique unicamente al cliquear en el botón
