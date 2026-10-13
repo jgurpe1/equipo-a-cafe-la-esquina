@@ -10,69 +10,88 @@
 <div id="Cabecera" class="cabeza">
                     <h3>Café La Esquina</h3>
                     <nav class="navegacion">
-
-                      <button>Tema Oscuro</button>
-                    <a href="#">Inicio</a>
-                    <a href="./carta.html">Carta</a>
+                    
+                    <button>Tema Oscuro</button>
+                    <a href="./index.html">Inicio</a>
+                    <a href="#">Carta</a>
                     <a href="./contacto.html">Contacto</a>
                     <a href="./Reservas.html">Reservas</a>
 
                     </nav>
 </div>
-  <!-- Aquí va la página -->
-  <div class="espaciado-página">
-    <h1>
-      Café de Barrio, hecho despacio
-    </h1>
+  <h2>
+      Nuestra Carta
+    </h2>
+    <!--Ponemos una barra con los botones que filtran la selección de productos. Cada botón llama a un producto con una class similar-->
+    <input type="text" name="" id="busqueda" placeholder="Buscar Producto...">
 
-    <p class="centro">
-      Granos de tueste artesano y dulces caseros cada mañana
-    </p>
+    <div class="botones-centro">
 
-    
-    <div class="verdecito">
-    Abierto Ahora
-    </div>
+  <button id="btnTodo">Todos</button>
+  <button id="btnCafe">Cafés</button>
+  <button id="btnDulce">Dulces</button>
+  <button id="btnSalado">Salados</button>
 
-    <p>
-      Horario: Lunes a Sabado, de 8:00 a 20:00 <br>
-      Domingo Cerrado.
-    </p>
-  </div>
-
+</div>
+    <p id="avisoProducto">Mostrando 8 Productos</p>
   <div class="tabla-tarjetas">
-
-  <div class="tarjetas">
-        <h3>
-Café de la Casa
-    </h3>
-
-    <p>
-  Mezcla de dos Orígenes, tueste medio.
-    </p>
+    <!--Se hace una caja para englobar todas las opciones de la carta. Los siguientes div corresponden a las fichas de cada producto.
+    Cada ficha cuenta con una clase para distinguir su categoria y una clase "producto" para agruparlas a la hora de usar javascript y css
+    -->
+    <div class="producto tarjetas cafe">
+      <h4>Expresso</h4>
+      <p>1,40€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas cafe">
+      <h4>Cafe con leche</h4>
+      <p>1,80€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas cafe">
+      <h4>Capuchino</h4>
+      <p>2,20€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas dulce">
+      <h4>Croissant</h4>
+      <p>1,60€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas dulce">
+      <h4>Tarta del día</h4>
+      <p>3,50€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas dulce">
+      <h4>Galleta de avena</h4>
+      <p>1,20€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas salado">
+      <h4>Tostada de tomate</h4>
+      <p>2,50€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas salado">
+      <h4>Bocadillo de tortilla</h4>
+      <p>4,00€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
   </div>
 
-    <div class="tarjetas">
-    <h3>
-      Tostada de tomate
-    </h3>
-    <p>
-      Pan de cristla y Aceite de Oliva
-    </p>
-  </div>
+  <div class="pedidos">
+  <p>
+    Mi Pedido
+  </p>
 
-    <div class="tarjetas">
-    <h3>
-      Tarta del Día
-    </h3>
-    <p>
-      Pregunta por el sabor de hoy
-    </p>
+  <p>
+    Total: 0,00 €
+  </p>
+
+  <button>Vaciar Pedido</button>
   </div>
-  </div>
-    </div> 
-    
-    
+  
   <footer>
     © 2026 Café La Esquina
   </footer>
