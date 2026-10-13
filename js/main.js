@@ -1,3 +1,5 @@
+// Creamos una variable para seleccionar cada producto 
+const PRODUCTOS = document.querySelectorAll(".producto");
 
 // Creamos una constante que encuentra cada boton de filtro que vamos a utilizar
 const BTNTODO = document.getElementById("btnTodo");
