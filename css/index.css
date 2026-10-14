@@ -65,13 +65,13 @@ h2 {
 .navegacion {
     margin-left: 800px;
     display: flex;
-    gap: 30px;
+    gap: 30px; 
     position: sticky;
     top: 0;
     z-index: 1000;
     /* ASEGÚRATE DE QUE NO TIENE ESTOS BORDES */
-    border-bottom: none;
-    box-shadow: none;
+    border-bottom: none; 
+    box-shadow: none;    
 }
 
 /* Y quita el subrayado a los enlaces por si acaso */
@@ -153,6 +153,10 @@ footer {
 }
 
 #btnTodo {
+    border: 2px solid green;
+    background-color: #008000d7;
+    color: white;
+    border-radius: 15px;
     padding: 10px 15px;
     font-size: 15px;
 }

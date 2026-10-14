@@ -1,1 +1,114 @@
-/*CSS de la página Contacto*/
+/* Estilos de la web apartado formulario de Contacto Trabajo de ELI */
+
+body{
+    background-color: antiquewhite;
+}
+
+
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Aplicada una clase al input del formulario de contacto*/
+
+.eli{
+    width:20%;
+    height:30px;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Aplicada una clase al boton enviar del formulario de contacto*/
+
+.enviar{
+    background-color: rgb(13, 68, 13);
+    border:1px solid;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* DE KEVINS*/
+/* Estilos de la web */
+:root{
+    --Amarillo-calido: #f0e5bb;
+    --color-cabecera:#E3F6F5;
+    --verde-bosque-dark: #145214dc;
+    --verde-bosque: #5bd35f9f;
+}
+
+h1 {
+    font-size: 2.5rem;;
+}
+
+h2 {
+    text-align: center;
+    font-style: oblique;
+}
+
+/*TIUTLO DE LA PAGINA + EL MENU */
+.cabeza {
+        display: flex;
+        align-items: center; /* Alinea verticalmente el logo y el título */
+        text-decoration: none;
+        gap: 500px;           /* Espacio entre el logo y el título */
+        position: relative;  /* Necesario si prefieres posicionamiento absoluto */
+        background-color: var(--verde-bosque-dark);
+        color: var(--color-cabecera);
+        }
+
+.navegacion {
+    margin-left: 800px;
+    display: flex;
+    gap: 30px; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* ASEGÚRATE DE QUE NO TIENE ESTOS BORDES */
+    border-bottom: none; 
+    box-shadow: none;    
+}
+
+/* Y quita el subrayado a los enlaces por si acaso */
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+
+
+input {
+    font-size: 1.2rem;     /* Aumenta el tamaño del texto */
+    padding: 10px 30px;  /* Aumenta el espacio interior (arriba/abajo y lados) */
+    margin-left: 800px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 15px;
+    background-color: rgba(57, 94, 6, 0.918);
+    color: white;
+}
+
+.espaciado-página {
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 35%;
+}
+
