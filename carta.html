@@ -1,19 +1,94 @@
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Carta · Café La Esquina</title>
-		<link rel="stylesheet" href="css/estilos.css" />
-	</head>
-	<body>
-		<h3>Café La Esquina</h3>
-		<a href="#">Inicio</a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carta · Café La Esquina</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <a href="#">Inicio</a>
 		<a href="./carta.html">Carta</a>
 		<a href="./contacto.html">Contacto</a>
+  <article class="b-Carta_superior">
+    <h2>Nuestra Carta</h2>
+    <input type="text" id="busqueda" name="busqueda">
+    <!--Ponemos una barra con los botones que filtran la selección de productos. Cada botón llama a un producto con una class similar-->
+    <div>
+      <button id="btnTodo" class="filtro">Todos</button>
+      <button id="btnCafe" class="filtro">Cafés</button>
+      <button id="btnDulce" class="filtro">Dulces</button>
+      <button id="btnSalado" class="filtro">Salados</button>
+    </div>
+    <p id="avisoProducto"></p>
+  </article>
+  <article class="b-Carta_medio">
+    <!--Se hace una caja para englobar todas las opciones de la carta. Los siguientes div corresponden a las fichas de cada producto.
+    Cada ficha cuenta con una clase para distinguir su categoria y una clase "producto" para agruparlas a la hora de usar javascript y css
+    -->
+    <div class="producto tarjetas cafe" id="expresso">
+      <img src="">
+      <h4>Expresso</h4>
+      <p>1,40€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
 
-		<!-- Aquí va la página -->
 
-		<script src="js/main.js"></script>
-	</body>
+    <div class="producto tarjetas cafe" id="cafeConLeche">
+      <img src="">
+      <h4>Cafe con leche</h4>
+      <p>1,80€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+
+
+    <div class="producto tarjetas cafe" id="">
+      <img src="">
+      <h4>Capuchino</h4>
+      <p>2,20€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+
+
+    <div class="producto tarjetas dulce" id="">
+      <img
+        src="">
+      <h4>Croissant</h4>
+      <p>1,60€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+
+
+    <div class="producto tarjetas dulce" id="">
+      <img src="">
+      <h4>Tarta del día</h4>
+      <p>3,50€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas dulce" id="">
+      <img src="">
+      <h4>Galleta de avena</h4>
+      <p>1,20€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas salado" id="">
+      <img src="">
+      <h4>Tostada de tomate</h4>
+      <p>2,50€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+    <div class="producto tarjetas salado" id="">
+      <img src="">
+      <h4>Bocadillo de tortilla</h4>
+      <p>4,00€</p>
+      <button class="botones-Añadir">Añadir</button>
+    </div>
+  </article>
+  <footer id="foot">
+    <p>©2026 Café La Esquina</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
 </html>
