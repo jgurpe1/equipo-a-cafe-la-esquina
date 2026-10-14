@@ -7,8 +7,6 @@
 }
 body {
     background-color: #ebe8bc;
-  color: black;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 h1 {
@@ -248,30 +246,23 @@ footer {
 .reservar-jesus {
     margin: 2%;
     background: #145214dc;
-    padding: 1% 2%;
+    padding: 2% 5%;
     border-radius: 8px;
+    border: none;
     color: white;
 }
 
 .formulario-de-reserva-jesus {
     width:50%;
     padding: 2%;
-/* Estilos normales (modo claro) */
-
-button {
-  padding: 10px 20px;
-  cursor: pointer;
 }
 
-/* Estilos para el modo oscuro */
-body.dark-mode {
-  background-color: black; /* Negro oscuro */
-  color: white; /* Letras en blanco */
-}
 
-body.dark-mode button, 
-body.dark-mode .mi-boton {
-  background-color: black; /* Fondo del botón en negro */
-  color: white; /* Letras del botón en blanco */
-  border: 1px solid white;
+#info-reserva-jesus {
+    display: block;
+    color: rgb(20, 73, 20);
+    font-size: 1.1em;
+    letter-spacing: 3%;
+    font-weight: bold;
+    margin-top: 5%;
 }
