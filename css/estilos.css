@@ -1,22 +1,26 @@
 /* Estilos de la web */
+
+/*ESTILOS (mios porque la ptm no los usé por semejante flojera) PARA LA PAGINA*/
 :root{
     --Amarillo-calido: #f0e5bb;
     --color-cabecera:#E3F6F5;
     --verde-bosque-dark: #145214dc;
     --verde-bosque: #5bd35f9f;
 }
+
 body {
     background-color: #ebe8bc;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 h1 {
     font-size: 2.5rem;
-    color: var(--color-cabecera);
 }
 
 h2 {
     text-align: center;
     font-style: oblique;
+    font-size: 2.2rem;
 }
 
 /*TIUTLO DE LA PAGINA + EL MENU */
@@ -66,7 +70,7 @@ footer {
     color: white;
 }
 
-.espaciado-página {
+.espaciado-pagina {
     align-items: center;
     justify-content: center;
     padding-top: 60px;
@@ -74,7 +78,6 @@ footer {
 }
 
 /*ESTO ES DE ABIERTO AHORA EN LA PRIMERA PAGINA */
-
 .verdecito {
     display: inline-block;
     width: fit-content;
@@ -88,7 +91,6 @@ footer {
     font-size: 18px;
 }
 
-/*TARJETAS DE LOS PRODUCTOS*/
 
 .tarjetas {
     width: 100%;
@@ -114,6 +116,16 @@ footer {
 
 
 /*BOTONES*/
+
+/* BOTON OSCURO */
+
+#btnModo {
+    padding: auto;
+    cursor: pointer;
+}
+
+
+/* BOTONES DE PRODUCTOS*/
 
 .botones-centro {
     text-align: center;
@@ -155,6 +167,7 @@ footer {
 /*BOTONES QUE ESTAN DENTRO DE LAS TERJETAS */
 
 .botones-Añadir {
+    align-self: center;
     background-color: white;
     border: 1px solid green;
     border-radius: 15px;
@@ -185,9 +198,9 @@ footer {
     box-sizing: border-box;
     border: 1px solid wheat;
     border-radius: 6px;
-    /*  AÑADE ESTO PARA CENTRARLA */
     margin: 50px auto; /* Centra horizontalmente y da un respiro arriba/abajo */
 }
+
 
 /* Ajustes para los textos y el botón */
 .pedidos p {
@@ -200,4 +213,53 @@ footer {
     font-size: 13px;
     cursor: pointer;
     margin: 0 auto;
+}
+
+/*DE OSCAR. ESTO FUE PRUEBA/*
+
+/* ADAPTACION A MODO OSCURO */
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: black; /* Negro oscuro */
+    color: white; /* Letras en blanco */
+}
+
+body.dark-mode #btnModo, 
+body.dark-mode .mi-boton {
+    background-color: black; /* Fondo del botón en negro */
+    color: white; /* Letras del botón en blanco */
+    border: 1px solid white;
+}
+
+
+/*Adaptacion para MOVILES, TABLETS, ORDENADORES Y PC O LO QUE SEA QUE TENGAIS */
+
+@media (min-width: 480px) and (max-width: 768px)  {
+    .espaciado-pagina {
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+    
+    .cabeza {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 0px;
+    }
+    
+    input {
+        display: block;
+        margin-left: 100px;
+    }
+
 }
