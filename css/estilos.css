@@ -1,6 +1,4 @@
 /* Estilos de la web */
-
-/*ESTILOS (mios porque la ptm no los usé por semejante flojera) PARA LA PAGINA*/
 :root{
     --Amarillo-calido: #f0e5bb;
     --color-cabecera:#E3F6F5;
@@ -48,11 +46,17 @@ h2 {
 
 /* Y quita el subrayado a los enlaces por si acaso */
 .navegacion a {
-    text-decoration: none;
+    text-decoration:none;
     color: white;
     justify-content: center;
 }
 
+
+/*AQUI ES UNICAMENTE LA PUTA BARRITA INDICADORA COÑO*/
+a.barrita-menu {
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
 
 input {
     font-size: 1.2rem;     /* Aumenta el tamaño del texto */
@@ -261,5 +265,7 @@ body.dark-mode .mi-boton {
         display: block;
         margin-left: 100px;
     }
+
+}
 
 }
