@@ -1,4 +1,36 @@
-/* Estilos de la web */
+/* Aplicada una clase al input del formulario de contacto*/
+
+.eli{
+    width:20%;
+    height:30px;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Aplicada una clase al boton enviar del formulario de contacto*/
+
+.enviar{
+    background-color: rgb(13, 68, 13);
+    border:1px solid;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.aviso{
+    background-color:#cfe8c9;
+    width:130px;
+    font-weight:bold;
+    color:rgb(24, 92, 24);
+    border-radius: 12px;
+    padding:4px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+   
 /* Estilos normales (modo claro) */
 body {
   background-color: white;
