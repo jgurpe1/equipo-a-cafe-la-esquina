@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     font-size: 15px;
-   
+
 /* Estilos normales (modo claro) */
 body {
     margin: 0%;
@@ -180,7 +180,7 @@ footer {
     font-size: 15px;
 }
 
-/*La categoria b-carta_superior se aplica a un article que abarca la parte superior de la página de la carta: el buscador, los botones de filtro y el aviso de la cantidad 
+/*La categoria b-carta_superior se aplica a un article que abarca la parte superior de la página de la carta: el buscador, los botones de filtro y el aviso de la cantidad
 de productos seleccionados*/
 
 .b-Carta_superior {
@@ -232,7 +232,6 @@ todos los productos*/
     letter-spacing: .03em;
 }
 
-    
 
 /*BOTONES QUE ESTAN DENTRO DE LAS TERJETAS */
 
@@ -296,7 +295,7 @@ todos los productos*/
     transform: scale(1.02);
     transition: 1s;
 }
-    
+
 /* AVISO DEL PRODUCTO*/
 
 #avisoProducto {
