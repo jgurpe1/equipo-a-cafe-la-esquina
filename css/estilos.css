@@ -1,6 +1,183 @@
-/*Introduzco un body margin 0 para que los elementos de la pagina no tenga un incomodo espaciado en los limites de la página*/
+/* Estilos de la web */
+:root{
+    --Amarillo-calido: #f0e5bb;
+    --color-cabecera:#E3F6F5;
+    --verde-bosque-dark: #145214dc;
+    --verde-bosque: #5bd35f9f;
+}
+
+/* Aplicada una clase al input del formulario de contacto*/
+
+.eli{
+    width:20%;
+    height:30px;
+}
+
+/* Aplicada una clase al boton enviar del formulario de contacto*/
+
+.enviar{
+    background-color: rgb(13, 68, 13);
+    border:1px solid;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.aviso{
+    background-color:#cfe8c9;
+    width:130px;
+    font-weight:bold;
+    color:rgb(24, 92, 24);
+    border-radius: 12px;
+    padding:4px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+   
+/* Estilos normales (modo claro) */
 body {
     margin: 0%;
+    background-color: #ebe8bc;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-cabecera);
+}
+
+h2 {
+    text-align: center;
+    font-style: oblique;
+}
+
+/*TIUTLO DE LA PAGINA + EL MENU */
+.cabeza {
+        display: flex;
+        align-items: center; /* Alinea verticalmente el logo y el título */
+        text-decoration: none;
+        gap: 500px;           /* Espacio entre el logo y el título */
+        position: relative;  /* Necesario si prefieres posicionamiento absoluto */
+        background-color: var(--verde-bosque-dark);
+        color: var(--color-cabecera);
+        }
+
+.navegacion {
+    margin-left: 800px;
+    display: flex;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* ASEGÚRATE DE QUE NO TIENE ESTOS BORDES */
+    border-bottom: none;
+    box-shadow: none;
+}
+
+/* Y quita el subrayado a los enlaces por si acaso */
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+
+
+input {
+    font-size: 1.2rem;     /* Aumenta el tamaño del texto */
+    padding: 10px 30px;  /* Aumenta el espacio interior (arriba/abajo y lados) */
+    margin-left: 800px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 15px;
+    background-color: rgba(57, 94, 6, 0.918);
+    color: white;
+}
+
+.espaciado-página {
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 35%;
+}
+
+/*ESTO ES DE ABIERTO AHORA EN LA PRIMERA PAGINA */
+
+.verdecito {
+    display: inline-block;
+    width: fit-content;
+    color: var(--verde-bosque-dark);
+    font-weight: bold;
+    background-color: var(--verde-bosque);
+    border: 2px solid var(--verde-bosque);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 105px;
+    font-size: 18px;
+}
+
+/*TARJETAS DE LOS PRODUCTOS*/
+
+.tarjetas {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    border: 2px solid var(--Amarillo-calido);
+    border-radius: 15px;
+    color: black;
+    box-sizing: border-box;
+}
+
+.tabla-tarjetas {
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
+/*BOTONES*/
+
+.botones-centro {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#btnTodo {
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+#btnCafe {
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+#btnDulce {
+        border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+#btnSalado {
+        border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
 }
 
 /*La categoria b-carta_superior se aplica a un article que abarca la parte superior de la página de la carta: el buscador, los botones de filtro y el aviso de la cantidad 
@@ -30,7 +207,7 @@ de productos seleccionados*/
 /*Trabaja el botón "todos". el botón de todos comienza ligeramente diferente al resto ya que indica que se han marcado
 todos los productos*/
 .b-Carta_superior div button:first-of-type {
-    border: 2px solid green;
+  border: 2px solid green;
     background-color: #008000d7;
     color: white;
     border-radius: 15px;
@@ -55,6 +232,10 @@ todos los productos*/
     letter-spacing: .03em;
 }
 
+    
+
+/*BOTONES QUE ESTAN DENTRO DE LAS TERJETAS */
+
 .botones-Añadir {
     background-color: white;
     border: 1px solid green;
@@ -62,9 +243,6 @@ todos los productos*/
     padding: 10px 15px;
     font-size: 15px;
 }
-
-
-
 
 /*la clase b-carta_medio abarca los estilos que trabajan con las fichas de producto de la página de carta*/
 .b-Carta_medio {
@@ -88,7 +266,7 @@ todos los productos*/
 
 /*Cambiamos el estilo del título de las fichas de producto*/
 .b-Carta_medio div h4:nth-child(n+0) {
-margin: 0;
+    margin: 0;
     color: black;
     text-align: center;
     font-size: 1.7rem;
@@ -118,7 +296,107 @@ margin: 0;
     transform: scale(1.02);
     transition: 1s;
 }
-
-    z-index: 1;
     
+/* AVISO DEL PRODUCTO*/
+
+#avisoProducto {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*PEDIDOS */
+.pedidos {
+    max-width: 350px;
+    width: 100%;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid wheat;
+    border-radius: 6px;
+    /*  AÑADE ESTO PARA CENTRARLA */
+    margin: 50px auto; /* Centra horizontalmente y da un respiro arriba/abajo */
+}
+
+/* Ajustes para los textos y el botón */
+.pedidos p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.pedidos button {
+    padding: 6px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.input-jesus {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 8px 0;
+    height: 31px;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1%;
+}
+
+.select-jesus {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 8px 0;
+    height: 35px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.h1-jesus {
+    color: black;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.p-jesus {
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-left: 2%;
+    margin-top: 0%;
+}
+
+.h4-jesus {
+    margin: 1% 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.reservar-jesus {
+    margin: 2%;
+    background: #145214dc;
+    padding: 2% 5%;
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+
+.formulario-de-reserva-jesus {
+    width:50%;
+    padding: 2%;
+}
+
+
+#info-reserva-jesus {
+    display: block;
+    color: rgb(20, 73, 20);
+    font-size: 1.1em;
+    letter-spacing: 3%;
+    font-weight: bold;
+    margin-top: 5%;
 }
