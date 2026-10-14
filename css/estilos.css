@@ -1,21 +1,3 @@
-
-/* Estilos de la web apartado formulario de Contacto */
-
-body{
-    background-color: antiquewhite;
-}
-
-
-
-p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-label{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
 /* Aplicada una clase al input del formulario de contacto*/
 
 .eli{
@@ -49,5 +31,27 @@ h2{
     justify-content: center;
     font-size: 15px;
    
+/* Estilos normales (modo claro) */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  background-color: black; /* Negro oscuro */
+  color: white; /* Letras en blanco */
+}
+
+body.dark-mode button, 
+body.dark-mode .mi-boton {
+  background-color: black; /* Fondo del botón en negro */
+  color: white; /* Letras del botón en blanco */
+  border: 1px solid white;
 }
