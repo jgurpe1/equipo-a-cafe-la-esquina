@@ -81,6 +81,11 @@ h2 {
     justify-content: center;
 }
 
+    /*AQUI ES UNICAMENTE LA PUTA BARRITA INDICADORA COÑO*/
+a.barrita-menu {
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
 
 input {
     font-size: 1.2rem;     /* Aumenta el tamaño del texto */
