@@ -180,6 +180,3 @@ mostrarAvisoCafeteria();
 
 // Actualizar el estado cada minuto
 setInterval(mostrarAvisoCafeteria, 60000);
-
-// Código de la web
-const botonModo = document.getElementById("btnModo");
