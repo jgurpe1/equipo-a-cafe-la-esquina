@@ -1,20 +1,4 @@
 //JS de la página Reservas
-// * Modo oscuro Oscar
-const botonModo = document.getElementById("btnModo");
-
-botonModo.addEventListener("click", () => {
-	if (botonModo.textContent === "Modo Oscuro") {
-		document.body.style.backgroundColor = "black";
-		document.body.style.color = "white";
-		botonModo.textContent = "Modo Claro";
-		//Cambio los colores a Oscuro y el texto del botón a "Modo Claro" para poder activarlo más tarde
-	} else {
-		document.body.style.backgroundColor = "white";
-		document.body.style.color = "black";
-		botonModo.textContent = "Modo Oscuro";
-		//Cambio los colores a Claro y el texto del botón a "Modo Oscuro" para poder activarlo más tarde
-	}
-});
 
 // * Fin modo oscuro
 
@@ -51,6 +35,7 @@ const pasadoManana = fechaPasado.toLocaleDateString("en-CA");
 // * Esto no lo hizo claude.
 BOTON.addEventListener("click", function () {
 	const RESERVA = document.getElementById("info-reserva-jesus");
+	RESERVA.textContent = "";
 	//* Hasta aqui.
 
 	let todoBien = true; // pasa a false si algo falla
@@ -69,6 +54,7 @@ BOTON.addEventListener("click", function () {
 	if (INPUT_PERSONAS.value <= 0 || INPUT_PERSONAS.value >= 9) {
 		SPAN_PERSONAS.textContent = `El número de personas tiene que estar entre 1 y 8`;
 		SPAN_PERSONAS.style.color = "red";
+		todoBien = false;
 	} else {
 		SPAN_PERSONAS.textContent = "";
 	}
@@ -119,4 +105,21 @@ BOTON.addEventListener("click", function () {
 	}
 	// ! HASTA AQUI HECHO POR CLAUDE
 	//* JESUS ⬆️
+});
+
+// * Modo oscuro Oscar
+const botonModo = document.getElementById("btnModo");
+
+botonModo.addEventListener("click", () => {
+	if (botonModo.textContent === "Modo Oscuro") {
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "white";
+		botonModo.textContent = "Modo Claro";
+		//Cambio los colores a Oscuro y el texto del botón a "Modo Claro" para poder activarlo más tarde
+	} else {
+		document.body.style.backgroundColor = "white";
+		document.body.style.color = "black";
+		botonModo.textContent = "Modo Oscuro";
+		//Cambio los colores a Claro y el texto del botón a "Modo Oscuro" para poder activarlo más tarde
+	}
 });
