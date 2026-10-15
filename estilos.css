@@ -1,0 +1,274 @@
+/* Estilos de la web */
+:root{
+    --Amarillo-calido: #f0e5bb;
+    --color-cabecera:#E3F6F5;
+    --verde-bosque-dark: #145214dc;
+    --verde-bosque: #5bd35f9f;
+}
+
+body {
+    background-color: #ebe8bc;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-style: oblique;
+    font-size: 2.2rem;
+}
+
+/*TIUTLO DE LA PAGINA + EL MENU */
+.cabeza {
+        display: flex;
+        align-items: center; /* Alinea verticalmente el logo y el título */
+        text-decoration: none;
+        gap: 500px;           /* Espacio entre el logo y el título */
+        position: relative;  /* Necesario si prefieres posicionamiento absoluto */
+        background-color: var(--verde-bosque-dark);
+        color: var(--color-cabecera);
+        }
+
+.navegacion {
+    margin-left: 800px;
+    display: flex;
+    gap: 30px; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* ASEGÚRATE DE QUE NO TIENE ESTOS BORDES */
+    border-bottom: none; 
+    box-shadow: none;    
+}
+
+/* Y quita el subrayado a los enlaces por si acaso */
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+
+
+input {
+    font-size: 1.2rem;     /* Aumenta el tamaño del texto */
+    padding: 10px 30px;  /* Aumenta el espacio interior (arriba/abajo y lados) */
+    margin-left: 800px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 15px;
+    background-color: rgba(57, 94, 6, 0.918);
+    color: white;
+}
+
+.espaciado-pagina {
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 35%;
+}
+
+/*ESTO ES DE ABIERTO AHORA EN LA PRIMERA PAGINA */
+.verdecito {
+    display: inline-block;
+    width: fit-content;
+    color: var(--verde-bosque-dark);
+    font-weight: bold;
+    background-color: var(--verde-bosque);
+    border: 2px solid var(--verde-bosque);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 105px;
+    font-size: 18px;
+}
+
+
+.tarjetas {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    border: 2px solid var(--Amarillo-calido);
+    border-radius: 15px;
+    color: black;
+    box-sizing: border-box;
+}
+
+.tabla-tarjetas {
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
+/*BOTONES*/
+
+/* BOTON OSCURO */
+
+#btnModo {
+    padding: auto;
+    cursor: pointer;
+}
+
+
+/* BOTONES DE PRODUCTOS*/
+
+.botones-centro {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#btnTodo {
+    border: 2px solid green;
+    background-color: #008000d7;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+#btnCafe {
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+#btnDulce {
+        border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+#btnSalado {
+        border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+/*BOTONES QUE ESTAN DENTRO DE LAS TERJETAS */
+
+.botones-Añadir {
+    align-self: center;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+/* AVISO DEL PRODUCTO*/
+
+#avisoProducto {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*PEDIDOS */
+.pedidos {
+    max-width: 350px;
+    width: 100%;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid wheat;
+    border-radius: 6px;
+    margin: 50px auto; /* Centra horizontalmente y da un respiro arriba/abajo */
+}
+
+
+/* Ajustes para los textos y el botón */
+.pedidos p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.pedidos button {
+    padding: 6px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+/* ADAPTACION A MODO OSCURO */
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: black; /* Negro oscuro */
+    color: white; /* Letras en blanco */
+}
+
+body.dark-mode #btnModo, 
+body.dark-mode .mi-boton {
+    background-color: black; /* Fondo del botón en negro */
+    color: white; /* Letras del botón en blanco */
+    border: 1px solid white;
+}
+
+
+/*Adaptacion para MOVILES, TABLETS, ORDENADORES Y PC */
+
+/* PAGINA INICIO */
+
+@media (min-width: 480px) and (max-width: 768px)  {
+    .espaciado-pagina {
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
+
+
+/* PAGINA DE CARTAS */
+
+@media (min-width: 480px) and (max-width: 768px) {
+    
+    .cabeza {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 0px;
+    }
+    
+    input {
+        display: block;
+        margin-left: 100px;
+    }
+
+}
+
+/* PAGINA DE FORMULARIO */
+
+
+
+/* PAGINA DE RESERVA */
+
+
