@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reservas</title>
+		<link rel="stylesheet" href="css/reservas.css" />
+		<link rel="stylesheet" href="css/tema-oscuro.css" />
+	</head>
+	<body>
+		<div id="Cabecera" class="cabeza">
+			<h3>Café La Esquina</h3>
+			<nav class="navegacion">
+				<button class="tema-oscuro">Tema Oscuro</button>
+				<a href="index.html">Inicio</a>
+				<a href="carta.html">Carta</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="#" class="barrita-menu">Reservas</a>
+			</nav>
+		</div>
+		<div>
+			<h1 class="h1-jesus">Reservas</h1>
+			<p class="p-jesus">Reserva tu mesa. Te esperamos.</p>
+		</div>
+
+		<div id="formulario-de-reserva">
+			<form class="formulario-de-reserva-jesus" action="" method="get">
+				<h4 class="h4-jesus">Nombre</h4>
+				<input class="input-jesus" type="text" id="input-nombre" />
+				<span id="span-nombre"></span>
+
+				<h4 class="h4-jesus">Fecha</h4>
+				<input class="input-jesus" type="date" id="Fecha" />
+				<span id="span-fecha"></span>
+
+				<h4 class="h4-jesus">Hora</h4>
+				<select class="select-jesus" name="hora" id="hora">
+					<option value="elige-una-hora">Elige una hora</option>
+					<option value="8:00">8:00</option>
+					<option value="8:30">8:30</option>
+					<option value="9:00">9:00</option>
+					<option value="9:30">9:30</option>
+					<option value="10:00">10:00</option>
+					<option value="10:30">10:30</option>
+					<option value="11:00">11:00</option>
+					<option value="11:30">11:30</option>
+					<option value="12:00">12:00</option>
+					<option value="12:30">12:30</option>
+					<option value="13:00">13:00</option>
+					<option value="13:30">13:30</option>
+					<option value="14:00">14:00</option>
+					<option value="14:30">14:30</option>
+					<option value="15:00">15:00</option>
+					<option value="15:30">15:30</option>
+					<option value="16:00">16:00</option>
+					<option value="16:30">16:30</option>
+					<option value="17:00">17:00</option>
+					<option value="17:30">17:30</option>
+					<option value="18:00">18:00</option>
+					<option value="18:30">18:30</option>
+					<option value="19:00">19:00</option>
+					<option value="19:30">19:30</option>
+				</select>
+				<span id="span-select"></span>
+
+				<h4 class="h4-jesus">Número de personas</h4>
+				<input
+					id="input-personas"
+					class="input-jesus"
+					type="number"
+					min="1"
+					max="8"
+					value="2"
+					required
+				/>
+				<span id="span-personas"></span><br />
+
+				<button type="button" class="reservar-jesus">Reservar</button>
+				<span id="info-reserva-jesus"></span>
+			</form>
+		</div>
+
+		<footer>© 2026 Café La Esquina</footer>
+		<script src="js/reservas.js"></script>
+		<script src="js/tema-oscuro.js"></script>
+	</body>
+</html>
