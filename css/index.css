@@ -1,0 +1,189 @@
+/* DISEÑO PARA TABLETS Y MÓVILES */
+
+@media (max-width: 768px) {
+    .cabeza {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2%;
+    }
+    .cabeza h1 {
+        text-align: left;
+    }
+    .navegacion {
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 0;
+        gap: 0.5rem;
+    }
+    .espaciado-página {
+        padding: 3%;
+    }
+    .tarjetas,
+    .productos {
+        flex-direction: column;
+    }
+}
+
+/* MÓVILES PEQUEÑOS */
+
+@media (max-width: 480px) {
+    .cabeza {
+        padding: 3%;
+    }
+    .navegacion {
+        gap: 0.25rem;
+    }
+    .navegacion a {
+        padding: 0.4rem;
+    }
+    input,
+    select,
+    textarea,
+    button {
+        width: 100%;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: auto;
+    }
+}
+
+
+/* Estilos de la web */
+:root {
+    --Amarillo-calido: #f0e5bb;
+    --color-cabecera: #E3F6F5;
+    --verde-bosque-dark: #145214dc;
+    --verde-bosque: #5bd35f9f;
+    --color-fondo: #f8f6f0;
+}
+
+
+/*Estilo de eli que afecta al cuerpo*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* CABECERA */
+.cabeza {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    background-color: #5B6B2F;
+    color: var(--color-cabecera);
+    gap: 1rem;
+}
+
+.cabeza h3 {
+    margin: 0;
+    padding: 0;
+    margin-left: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    Font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    padding: 0.25rem 0.70rem;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font: inherit;
+    cursor: pointer;
+    font-size: 90%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.navegacion a {
+    display: inline-block;
+    padding: 0.5rem;
+    color: var(--color-cabecera);
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+/*PARTE SUPERIOR DEL CONTENIDO DE LA  PÁGINA*/
+
+/*Afecta al contenedor que abarca el: título, el aviso de abierto o cerrado y la información con los horarios*/
+.espaciado-página {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+/*La clase aviso sirve para darle estilos a la notificación de abierto o cerrado*/
+.aviso {
+    background-color: #cfe8c9;
+    width: 130px;
+    font-weight: bold;
+    color: rgb(24, 92, 24);
+    border-radius: 12px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+/*TARJETAS DE LOS PRODUCTOS*/
+
+.tarjetas {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    border: 2px solid var(--Amarillo-calido);
+    border-radius: 15px;
+    color: black;
+    box-sizing: border-box;
+}
+
+.tabla-tarjetas {
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/*EL PIE DE PÁGINA*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 15px;
+    background-color: #5B6B2F;
+    color: white;
+}

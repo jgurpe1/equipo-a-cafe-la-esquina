@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Contacto · Café La Esquina</title>
+	<link rel="stylesheet" href="css/contacto.css" />
+	<link rel="stylesheet" href="css/tema-oscuro.css" />
+</head>
+
+<body>
+	<div id="Cabecera" class="cabeza">
+		<h3>Café La Esquina</h3>
+		<nav class="navegacion">
+			<button class="tema-oscuro">Tema Oscuro</button>
+			<a href="index.html">Inicio</a>
+			<a href="carta.html">Carta</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="reservas.html" class="barrita-menu">Reservas</a>
+		</nav>
+	</div>
+
+
+	<div class="formulario"></div>
+	<h1>Contacto</h1>
+	<form id="formulario-contacto">
+		<p>Escríbenos y te respondemos en un día laborable.</p>
+		<label for="nombre">Nombre</label><br />
+		<input class="eli" type="text" id="nombre" />
+		<p id="error-nombre" style="color: red"></p>
+
+		<label for="correo">Correo electrónico</label><br />
+		<input class="eli" type="text" id="correo" />
+		<p id="error-correo" style="color: red"></p>
+
+		<label for="mensaje">Mensaje</label><br />
+		<textarea id="mensaje" cols="50" rows="10"></textarea>
+		<p id="error-mensaje" style="color: red"></p>
+
+		<button class="enviar" type="button" onclick="validarFormulario()">
+			Enviar
+		</button>
+
+		<p id="mensaje-exito" style="color: green"></p>
+
+		<!--Falta meter el contador de los caractéres del mensaje del formulario de contacto-->
+	</form>
+
+	<footer>© 2026 Café La Esquina</footer>
+	<script src="js/contacto.js"></script>
+	<script src="js/tema-oscuro.js"></script>
+</body>
+
+</html>
