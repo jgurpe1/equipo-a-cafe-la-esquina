@@ -33,7 +33,8 @@
 			<p id="error-correo" style="color: red"></p>
 
 			<label for="mensaje">Mensaje</label><br />
-			<textarea id="mensaje" cols="50" rows="10"></textarea>
+			<textarea id="mensaje" cols="50" rows="10" maxlength="200"></textarea>
+			<p id="contador-mensaje" style="font-size: 0.9em; color: #555;">0 / 200 caracteres</p>
 			<p id="error-mensaje" style="color: red"></p>
 
 			<button class="enviar" type="button" onclick="validarFormulario()">
@@ -41,10 +42,11 @@
 			</button>
 
 			<p id="mensaje-exito" style="color: green"></p>
-
-			<!--Falta meter el contador de los caractéres del mensaje del formulario de contacto-->
+			
+			<!--Falta meter el contador de los caractéres del mensaje del formulario de contacto... Que ahora la estoy haciendo-->
 		</form>
-
+		
+				<footer>© 2026 Café La Esquina</footer>
 		<script src="js/contacto.js"></script>
 		<script src="js/tema-oscuro.js"></script>
 	</body>
