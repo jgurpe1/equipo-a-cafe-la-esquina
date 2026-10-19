@@ -37,3 +37,21 @@ function validarFormulario() {
 }
 
 //Falta meter el control del contador de los caractéres del formulario del contacto//
+// Ahora al mmgv de Kevin tienen que romper el contador en el formulario... El pescado no tiene dia libre
+
+function actualizadorContador() {
+  const mensaje = document.getElementById("mensaje");
+  const contador = document.getElementById("contador-mensaje");
+  const total = mensaje.value.length;
+
+  contador.textContent = total + " / 200 caracteres";
+
+  if (total === 200) {
+    contador.style.color = "red";
+  } else {
+    contador.style.color = "#555";
+  }
+}
+
+document.getElementById("mensaje")
+document.addEventListener("input", actualizadorContador); formulario del contacto//
